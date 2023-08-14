@@ -1,0 +1,1375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;    
+
+}
+
+
+.wrapper{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.container{
+    border: 1px solid white;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+ .reload{
+    cursor: pointer;
+    background-color:  rgb(125, 123, 190);
+    color: black;
+    position: absolute;
+    bottom: 1rem;
+    font-size: small;
+    right: 1rem;
+    border: none;
+    padding: 0.2rem 0.4rem;
+    transition: all ease-in 0.2s;
+
+} 
+
+.reload:hover{
+    background-color:  rgb(92, 89, 183);
+    color: white;
+}
+
+
+
+.head{
+    background-color: #ab8b09;
+    position: absolute;
+    top: 1rem;
+    padding: 0.1rem 0.5rem;
+    font-size: small;
+    color: white;
+    font-weight:lighter;
+}
+
+.box-center{
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+    width: 90%;
+    height: 40px;
+}
+
+
+.isolator{
+    cursor: pointer;
+}
+
+.circuitBreaker{
+    cursor:pointer;
+}
+
+#line1 {
+    position: absolute;
+    top: 5rem;
+    left: 10rem;
+    width: 2.5px;
+    height: 50px;
+    background-color: green;
+    transition: all ease-in-out 0.3s;
+}
+
+.termination-1{
+    width: 15px;
+    height: 15px;
+    clip-path: polygon(52% 68%, 5% 0, 98% 0);
+    background-color: green;
+    position: absolute;
+    top: 5rem;
+    left: 9.6rem;
+    transition: all ease-in-out 0.5s;
+
+
+}
+
+.termination-1.active3{
+    background-color: rgb(221, 70, 70);
+    top:7.5rem;
+   animation: move 1s linear infinite; 
+    
+}
+
+@keyframes move {
+    from{
+        top: 5rem;
+    }
+    to{
+        top: 7.5rem;
+    }
+}
+
+.supply-1 {
+    opacity: 1;
+    padding: 0.5rem 1rem;
+    font-size: small;
+    position: absolute;
+    top: 2rem;
+    left: 7.8rem;
+    color:white;
+    /* color: red; */
+    /* font-weight: bolder; */
+    opacity: 1;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;   
+    transition: all ease-in-out 0.3s;
+
+}
+
+.supply-1.active{
+    padding: 0.5rem 1rem;
+    font-size: small;
+    position: absolute;
+    top: 2rem;
+    left: 7.8rem;
+    /* color:white; */
+    color: red;
+    /* font-weight: bolder; */
+    opacity: 1;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    transition: all ease-in-out 0.3s;
+
+}
+
+
+
+#CB-1{
+    background-color: black;
+    width: 35px;
+    height: 35px;
+    border: 3px solid green;
+    position: absolute;
+    top: 8rem;
+    left: 9rem;
+    transition: all ease-in-out 0.3s;
+}
+
+
+.CB{
+    position: absolute;
+    color: white;
+    /* border: 1px solid red; */
+    padding: 0.5rem 1rem; 
+    font-size: smaller;
+}
+
+.CBA{
+    top: 8rem;
+    left: 11rem;
+}
+
+
+#line1-1{
+    position: absolute;
+    top: 10.1rem;
+    left: 10rem;
+    width: 2.5px;
+    height: 2rem;
+    background-color: green;
+    transition: all ease-in-out 0.3s;
+}
+
+#line2{
+    background-color: green;
+    width: 5rem;
+    height: 2.5px;
+    position: absolute;
+    top: 12rem;
+    left: 7.5rem;
+    transition: all ease-in-out 0.3s;
+}
+
+#line2-2{
+    background-color: green;
+    width: 2.5px;
+    height: 1.2rem;
+    position: absolute;
+    left: 7.5rem;
+    top: 12rem;
+    transition: all ease-in-out 0.3s;
+}
+
+#iso1-1{
+    background-color: black;
+    height: 16px;
+    width: 16px;
+    border:3px solid green;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    top: 13.1rem;
+    left: 7.1rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.DS{
+    position: absolute;
+    font-size: smaller;
+    padding: 0.5rem 1rem;
+    color: white;
+}
+
+.DSA-1{
+
+    top: 13.1rem;
+    left: 4rem;
+    
+}
+
+#line2-3{
+    background-color: green;
+    width: 2.5px;
+    height: 1.2rem;
+    position: absolute;
+    left: 12.5rem;
+    top: 12rem;
+    transition: all ease-in-out 0.3s;
+}
+#iso1-2{
+    background-color: black;
+    height: 16px;
+    width: 16px;
+    border:3px solid green;
+    border-radius: 50%;
+    position: absolute;
+    top: 13.1rem;
+    left: 12.1rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.DSB-1{
+    top: 13.1rem;
+    left: 13rem;
+}
+
+
+
+#line3-1{
+    background-color: green;
+    width: 2.5px;
+    height: 1.9rem;
+    position: absolute;
+    left: 7.5rem;
+    top: 14rem;
+    transition: all ease-in-out 0.3s;
+
+}
+
+#line3-2{
+    background-color: green;
+    width: 2.5px;
+    height: 4.2rem;
+    position: absolute;
+    left: 12.5rem;
+    top: 14rem;
+    transition: all ease-in-out 0.3s;
+}
+
+
+.btn{
+    cursor: pointer;
+    background-color: rgb(209, 209, 209);
+    padding: 0.1rem 0.5rem;
+    border: none;
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+    font-weight: lighter;
+    transition: all ease-in-out 0.3s;
+}
+
+
+#bus1{
+    position: absolute;
+    top: 15.9rem;
+    background-color: green;
+    width: 90%;
+    height: 2px;
+    transition: all ease-in-out 0.3s;
+}
+
+#bus2{
+    position: absolute;
+    top: 18.2rem;
+    background-color: green;
+    width: 90%;
+    height: 2px;
+    transition: all ease-in-out 0.3s;
+}
+
+.BUS{
+    color: rgb(255, 251, 6);
+    font-size: small;
+}
+
+.b1{
+    position: absolute;
+    top: 14rem;
+    right:2rem;
+}
+
+.b2{
+    position: absolute;
+    top: 19rem;
+    right: 2rem;
+}
+
+.bay2-line31{
+
+    width: 2.5px ;
+    height: 4.5rem;
+    position: absolute;
+    top: 16rem;
+    left: 20rem;
+    background-color: green;
+    transition: all ease-in-out 0.3s;
+}
+
+
+.bay2-line32{
+
+    width: 2.5px ;
+    height: 1.8rem;
+    position: absolute;
+    top: 18.2rem;
+    left: 25rem;
+    background-color: green;
+    transition: all ease-in-out 0.3s;
+}
+
+.bay2-iso1{
+    background-color: black;
+    height: 16px;
+    width: 16px;
+    border:3px solid green;
+    border-radius: 50%;
+    position: absolute;
+    top: 20rem;
+    left: 19.6rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.DSA-2{
+    top: 20rem;
+    left: 16rem;
+}
+
+.bay2-iso2{
+    background-color: black;
+    height: 16px;
+    width: 16px;
+    border:3px solid green;
+    border-radius: 50%;
+    position: absolute;
+    top: 20rem;
+    left: 24.6rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.DSB-2{
+    top: 20rem;
+    left: 25.5rem;
+}
+
+
+.bay2-line21{
+    width: 2.5px ;
+    height: 1rem;
+    position: absolute;
+    top: 21rem;
+    left: 20rem;
+    background-color: green;
+    transition: all ease-in-out 0.3s;
+}
+
+.bay2-line22{
+
+    width: 2.5px ;
+    height: 1rem;
+    position: absolute;
+    top: 21rem;
+    left: 25rem;
+    background-color: green;
+    transition: all ease-in-out 0.3s;
+
+}
+
+.bay2-line2{
+    background-color: green;
+    width: 5rem;
+    height: 2.5px;
+    position: absolute;
+    top: 21.8rem;
+    left: 20rem; 
+    transition: all ease-in-out 0.3s;
+}
+
+.bay2-line11{
+    position: absolute;
+    top: 22rem;
+    left: 22.5rem;
+    width: 2.5px;
+    height: 2rem;
+    background-color: green;
+    transition: all ease-in-out 0.3s;
+}
+
+.CB-2{
+    background-color: black;
+    width: 35px;
+    height: 35px;
+    border: 3px solid green;
+    position: absolute;
+    top: 24rem;
+    left: 21.5rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.CBB{
+    top: 24rem;
+    left: 23.5rem;
+}
+
+
+.bay2-line1{
+    position: absolute;
+    top: 26rem;
+    left: 22.5rem;
+    width: 2.5px;
+    height: 50px;
+    background-color: green;
+    transition: all ease-in-out 0.3s;
+}
+
+.AMT-1{
+    font-size:small;
+    top: 30rem;
+    left: 20.5rem;
+}
+
+
+/* bay-3 */
+
+.bay3-line31{
+    background-color: green;
+    width: 2.5px;
+    height: 1.5rem;
+    position: absolute;
+    left: 36rem;
+    top: 14.5rem;
+    transition: all ease-in-out 0.3s;
+}
+
+
+
+.bay3-line1{
+    background-color: green;
+    width: 2.5px;
+    height: 1.5rem;
+    position: absolute;
+    left: 36rem;
+    top: 12.5rem;
+    transition: all ease-in-out 0.3s;
+
+}
+
+.bay3-iso1{
+    background-color: green;
+    height: 16px;
+    width: 16px;
+    border:3px solid green;
+    border-radius: 50%;
+    position: absolute;
+    top: 13.5rem;
+    left: 35.6rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.DSA-3{
+    top: 13.5rem;
+    left: 28rem;
+}
+
+.bay3-line11{
+    background-color: green;
+    width: 2rem;
+    height: 2.5px;
+    position: absolute;
+    left: 36rem;
+    top: 12.5rem;
+    transition: all ease-in-out 0.3s;
+
+}
+
+.CB-3{
+    background-color: black;
+    width: 35px;
+    height: 35px;
+    border: 3px solid green;
+    position: absolute;
+    top: 11.5rem;
+    left: 38rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.CBC{
+    top: 9rem;
+    left: 33rem;
+}
+
+.bay3-line22{
+    background-color: green;
+    width: 2rem;
+    height: 2.5px;
+    position: absolute;
+    left: 40rem;
+    top: 12.5rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.bay3-line2{
+    background-color: green;
+    width: 2.5px;
+    height: 1.1rem;
+    position: absolute;
+    left: 42rem;
+    top: 12.5rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.bay3-iso2{
+    background-color: green;
+    height: 16px;
+    width: 16px;
+    border:3px solid green;
+    border-radius: 50%;
+    position: absolute;
+    top: 13.5rem;
+    left: 41.6rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.DSB-3{
+    top: 13.5rem;
+    left: 38.6rem;
+}
+
+.bay3-line32{
+    background-color: green;
+    width: 2.5px;
+    height: 3.7rem;
+    position: absolute;
+    left: 42rem;
+    top: 14.5rem;
+    transition: all ease-in-out 0.3s;
+}
+
+
+/* 
+bay-4 */
+
+.bay4-line31{
+    width: 2.5px ;
+    height: 4.5rem;
+    position: absolute;
+    top: 16rem;
+    right: 30rem;
+    background-color: green;
+    transition: all ease-in-out 0.3s;
+}
+
+
+.bay4-line32{
+
+    width: 2.5px ;
+    height: 1.8rem;
+    position: absolute;
+    top: 18.2rem;
+    right: 25rem;
+    background-color: green;
+    transition: all ease-in-out 0.3s;
+}
+
+.bay4-iso1{
+    background-color: black;
+    height: 16px;
+    width: 16px;
+    border:3px solid green;
+    border-radius: 50%;
+    position: absolute;
+    top: 20rem;
+    right: 29.6rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.DSA-4{
+    top: 20rem;
+    right: 30.5rem;
+}
+
+.bay4-iso2{
+    background-color: black;
+    height: 16px;
+    width: 16px;
+    border:3px solid green;
+    border-radius: 50%;
+    position: absolute;
+    top: 20rem;
+    transition: all ease-in-out 0.3s;
+    right: 24.6rem;
+}
+
+.DSB-4{
+    top: 20rem;
+    right: 21rem;
+}
+
+.bay4-line21{
+    width: 2.5px ;
+    height: 1rem;
+    position: absolute;
+    top: 21rem;
+    right: 30rem;
+    background-color: green;
+    transition: all ease-in-out 0.3s;
+}
+
+.bay4-line22{
+
+    width: 2.5px ;
+    height: 1rem;
+    position: absolute;
+    top: 21rem;
+    right: 25rem;
+    background-color: green;
+    transition: all ease-in-out 0.3s;
+}
+
+.bay4-line2{
+    background-color: green;
+    width: 5rem;
+    height: 2.5px;
+    position: absolute;
+    top: 21.8rem;
+    right: 25rem; 
+    transition: all ease-in-out 0.3s;
+}
+
+.bay4-line11{
+    position: absolute;
+    top: 22rem;
+    right: 27.5rem;
+    width: 2.5px;
+    height: 2rem;
+    background-color: green;
+    transition: all ease-in-out 0.3s;
+}
+
+.CB-4{
+    background-color: black;
+    width: 35px;
+    height: 35px;
+    border: 3px solid green;
+    position: absolute;
+    top: 24rem;
+    right: 26.5rem;
+    transition: all ease-in-out 0.3s;}
+
+.CBD{
+    top: 24rem;
+    right: 22.5rem;
+}
+
+.bay4-line1{
+    position: absolute;
+    top: 26rem;
+    right: 27.5rem;
+    width: 2.5px;
+    height: 50px;
+    background-color: green;
+    transition: all ease-in-out 0.3s;
+}
+
+.AMT-2{
+    font-size: small;
+    top: 30rem;
+    right: 25.5rem;
+}
+
+/* bay-5 */
+
+
+ .supply-2 {
+    opacity: 1;
+    padding: 0.5rem 1rem;
+    font-size: small;
+    position: absolute;
+    top: 2rem;
+    right: 12.5rem;
+    color:white;
+    /* opacity: 1; */
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;    
+} 
+
+.supply-2.active2{
+    opacity: 1;
+    padding: 0.5rem 1rem;
+    font-size: small;
+    position: absolute;
+    top: 2rem;
+    right: 12.5rem;
+    color:darkorange;
+    transition: all ease-in-out 0.3s;
+}
+
+.termination-2{
+    width: 15px;
+    height: 15px;
+    clip-path: polygon(52% 68%, 5% 0, 98% 0);
+    background-color: green;
+    position: absolute;
+    top: 5rem;
+    right: 14.6rem;
+    transition: all ease-in-out 0.5s;
+
+
+}
+
+
+.termination-2.active4{
+    background-color:darkorange;
+    top:7.5rem;
+   animation: move 1s linear infinite; 
+    
+}
+
+
+
+
+
+.bay5-line1{
+    position: absolute;
+    top: 5rem;
+    right: 15rem;
+    width: 2.5px;
+    height: 50px;
+    background-color: green;
+    /* transition: all 0.6s; */
+    transition: all ease-in-out 0.3s;
+}
+
+
+.CB-5{
+    background-color: black;
+    width: 35px;
+    height: 35px;
+    border: 3px solid green;
+    position: absolute;
+    top: 8rem;
+    right: 14rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.CBE{
+    top: 8rem;
+    right: 10rem;
+}
+
+.bay5-line11{
+    position: absolute;
+    top: 10.1rem;
+    right: 15rem;
+    width: 2.5px;
+    height: 2rem;
+    background-color: green;
+    transition: all ease-in-out 0.3s;
+
+}
+
+.bay5-line2{
+    background-color: green;
+    width: 5rem;
+    height: 2.5px;
+    position: absolute;
+    top: 12rem;
+    right: 12.5rem;
+    transition: all ease-in-out 0.3s;
+
+}
+
+.bay5-line21{
+    background-color: green;
+    width: 2.5px;
+    height: 1.2rem;
+    position: absolute;
+    right: 17.5rem;
+    top: 12rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.bay5-iso1{
+    background-color: black;
+    height: 16px;
+    width: 16px;
+    border:3px solid green;
+    border-radius: 50%;
+    position: absolute;
+    top: 13.1rem;
+    right: 17rem;
+    transition: all ease-in-out 0.3s;
+}
+.DSA-5{
+    top: 13.1rem;
+    right: 17.5rem;
+}
+
+.bay5-line22{
+    background-color: green;
+    width: 2.5px;
+    height: 1.2rem;
+    position: absolute;
+    right: 12.5rem;
+    top: 12rem;
+    transition: all ease-in-out 0.3s;
+    ;
+}
+
+.bay5-iso2{
+    background-color: black;
+    height: 16px;
+    width: 16px;
+    border:3px solid green;
+    border-radius: 50%;
+    position: absolute;
+    top: 13.1rem;
+    right: 12.1rem;
+    transition: all ease-in-out 0.3s;
+
+}
+
+.DSB-5{
+    top: 13.1rem;
+    right: 9rem;
+}
+
+
+.bay5-line31{
+    background-color: green;
+    width: 3px;
+    height: 2rem;
+    position: absolute;
+    top: 14rem;
+    right: 17.4rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.bay5-line32{
+    background-color: green;
+    width: 3px;
+    height: 4.2rem;
+    position: absolute;
+    top: 14rem;
+    right: 12.5rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.btn2{
+    background-color: rgb(209, 209, 209);
+    padding: 0.1rem 0.5rem;
+    position: absolute;
+    top: 5rem;
+    right: 2rem;
+    border:none;
+    cursor: pointer;
+    font-weight: lighter;
+    transition: all ease-in-out 0.3s;
+}
+
+.supply-2.active{
+    padding: 0.5rem 1rem;
+    font-size: small;
+    position: absolute;
+    top: 2rem;
+    right: 7.8rem;
+    /* color:white; */
+    color: darkorange;
+    /* font-weight: bolder; */
+    opacity: 1;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+
+@media screen and (min-width : 1200px) {
+    
+    
+    .bay3-line31{
+        background-color: green;
+        width: 2.5px;
+        height: 1.5rem;
+        position: absolute;
+        left: 30rem;
+        top: 14.5rem;
+    }
+    
+    
+    
+    .bay3-line1{
+        background-color: green;
+        width: 2.5px;
+        height: 1.5rem;
+        position: absolute;
+        left: 30rem;
+        top: 12.5rem;
+    
+    }
+    
+    .bay3-iso1{
+        background-color: green;
+        height: 16px;
+        width: 16px;
+        border:3px solid green;
+        border-radius: 50%;
+        position: absolute;
+        top: 13.5rem;
+        left: 29.6rem;
+    }
+    
+    .bay3-line11{
+        background-color: green;
+        width: 2rem;
+        height: 2.5px;
+        position: absolute;
+        left: 30rem;
+        top: 12.5rem;
+    
+    }
+    
+    .CB-3{
+        background-color: black;
+        width: 35px;
+        height: 35px;
+        border: 3px solid green;
+        position: absolute;
+        top: 11.5rem;
+        left: 32rem;
+    }
+    
+    .bay3-line22{
+        background-color: green;
+        width: 2rem;
+        height: 2.5px;
+        position: absolute;
+        left: 34rem;
+        top: 12.5rem;
+    }
+    
+    .bay3-line2{
+        background-color: green;
+        width: 2.5px;
+        height: 1.1rem;
+        position: absolute;
+        left: 36rem;
+        top: 12.5rem;
+    }
+    
+    .bay3-iso2{
+        background-color: green;
+        height: 16px;
+        width: 16px;
+        border:3px solid green;
+        border-radius: 50%;
+        position: absolute;
+        top: 13.5rem;
+        left: 35.6rem;
+    }
+    
+    .bay3-line32{
+        background-color: green;
+        width: 2.5px;
+        height: 3.7rem;
+        position: absolute;
+        left: 36rem;
+        top: 14.5rem;
+    }
+
+    .CBC{
+        top: 9rem;
+        left: 31rem;
+    }
+
+    .DSA-3{
+        top: 13.5rem;
+        left: 26rem;
+    }
+
+    .DSB-3{
+        top: 13.5rem;
+        left: 36.5rem;
+    }
+    
+        
+    }
+
+
+@media screen and (min-width : 1300px) {
+    
+    
+.bay3-line31{
+    background-color: green;
+    width: 2.5px;
+    height: 1.5rem;
+    position: absolute;
+    left: 32rem;
+    top: 14.5rem;
+}
+
+
+
+.bay3-line1{
+    background-color: green;
+    width: 2.5px;
+    height: 1.5rem;
+    position: absolute;
+    left: 32rem;
+    top: 12.5rem;
+
+}
+
+.bay3-iso1{
+    background-color: green;
+    height: 16px;
+    width: 16px;
+    border:3px solid green;
+    border-radius: 50%;
+    position: absolute;
+    top: 13.5rem;
+    left: 31.6rem;
+}
+
+.bay3-line11{
+    background-color: green;
+    width: 2rem;
+    height: 2.5px;
+    position: absolute;
+    left: 32rem;
+    top: 12.5rem;
+
+}
+
+.CB-3{
+    background-color: black;
+    width: 35px;
+    height: 35px;
+    border: 3px solid green;
+    position: absolute;
+    top: 11.5rem;
+    left: 34rem;
+}
+
+.bay3-line22{
+    background-color: green;
+    width: 2rem;
+    height: 2.5px;
+    position: absolute;
+    left: 36rem;
+    top: 12.5rem;
+}
+
+.bay3-line2{
+    background-color: green;
+    width: 2.5px;
+    height: 1.1rem;
+    position: absolute;
+    left: 38rem;
+    top: 12.5rem;
+}
+
+.bay3-iso2{
+    background-color: green;
+    height: 16px;
+    width: 16px;
+    border:3px solid green;
+    border-radius: 50%;
+    position: absolute;
+    top: 13.5rem;
+    left: 37.6rem;
+}
+
+.bay3-line32{
+    background-color: green;
+    width: 2.5px;
+    height: 3.7rem;
+    position: absolute;
+    left: 38rem;
+    top: 14.5rem;
+}
+
+
+.CBC{
+    top: 9rem;
+    left: 33rem;
+}
+
+.DSA-3{
+    top: 13.5rem;
+    left: 28rem;
+}
+
+.DSB-3{
+    top: 13.5rem;
+    left: 38.5rem;
+}
+
+
+    
+}
+
+
+
+
+@media screen and (min-width : 1400px) {
+    
+    
+    .bay3-line31{
+        background-color: green;
+        width: 2.5px;
+        height: 1.5rem;
+        position: absolute;
+        left: 35rem;
+        top: 14.5rem;
+    }
+    
+    
+    
+    .bay3-line1{
+        background-color: green;
+        width: 2.5px;
+        height: 1.5rem;
+        position: absolute;
+        left: 35rem;
+        top: 12.5rem;
+    
+    }
+    
+    .bay3-iso1{
+        background-color: green;
+        height: 16px;
+        width: 16px;
+        border:3px solid green;
+        border-radius: 50%;
+        position: absolute;
+        top: 13.5rem;
+        left: 34.6rem;
+    }
+    
+    .bay3-line11{
+        background-color: green;
+        width: 2rem;
+        height: 2.5px;
+        position: absolute;
+        left: 35rem;
+        top: 12.5rem;
+    
+    }
+    
+    .CB-3{
+        background-color: black;
+        width: 35px;
+        height: 35px;
+        border: 3px solid green;
+        position: absolute;
+        top: 11.5rem;
+        left: 37rem;
+    }
+    
+    .bay3-line22{
+        background-color: green;
+        width: 2rem;
+        height: 2.5px;
+        position: absolute;
+        left: 39rem;
+        top: 12.5rem;
+    }
+    
+    .bay3-line2{
+        background-color: green;
+        width: 2.5px;
+        height: 1.1rem;
+        position: absolute;
+        left: 41rem;
+        top: 12.5rem;
+    }
+    
+    .bay3-iso2{
+        background-color: green;
+        height: 16px;
+        width: 16px;
+        border:3px solid green;
+        border-radius: 50%;
+        position: absolute;
+        top: 13.5rem;
+        left: 40.6rem;
+    }
+    
+    .bay3-line32{
+        background-color: green;
+        width: 2.5px;
+        height: 3.7rem;
+        position: absolute;
+        left: 41rem;
+        top: 14.5rem;
+    }
+
+    .CBC{
+        top: 9rem;
+        left: 36rem;
+    }
+    
+    .DSA-3{
+        top: 13.5rem;
+        left: 31rem;
+    }
+    
+    .DSB-3{
+        top: 13.5rem;
+        left: 41.5rem;
+    }
+    
+    
+    
+        
+    }
+
+
+    
+@media screen and (min-width : 1500px) {
+    
+    
+        .bay3-line31{
+            background-color: green;
+            width: 2.5px;
+            height: 1.5rem;
+            position: absolute;
+            left: 37rem;
+            top: 14.5rem;
+        }
+        
+        
+        
+        .bay3-line1{
+            background-color: green;
+            width: 2.5px;
+            height: 1.5rem;
+            position: absolute;
+            left: 37rem;
+            top: 12.5rem;
+        
+        }
+        
+        .bay3-iso1{
+            background-color: green;
+            height: 16px;
+            width: 16px;
+            border:3px solid green;
+            border-radius: 50%;
+            position: absolute;
+            top: 13.5rem;
+            left: 36.6rem;
+        }
+        
+        .bay3-line11{
+            background-color: green;
+            width: 2rem;
+            height: 2.5px;
+            position: absolute;
+            left: 37rem;
+            top: 12.5rem;
+        
+        }
+        
+        .CB-3{
+            background-color: black;
+            width: 35px;
+            height: 35px;
+            border: 3px solid green;
+            position: absolute;
+            top: 11.5rem;
+            left: 39rem;
+        }
+        
+        .bay3-line22{
+            background-color: green;
+            width: 2rem;
+            height: 2.5px;
+            position: absolute;
+            left: 41rem;
+            top: 12.5rem;
+        }
+        
+        .bay3-line2{
+            background-color: green;
+            width: 2.5px;
+            height: 1.1rem;
+            position: absolute;
+            left: 43rem;
+            top: 12.5rem;
+        }
+        
+        .bay3-iso2{
+            background-color: green;
+            height: 16px;
+            width: 16px;
+            border:3px solid green;
+            border-radius: 50%;
+            position: absolute;
+            top: 13.5rem;
+            left: 42.6rem;
+        }
+        
+        .bay3-line32{
+            background-color: green;
+            width: 2.5px;
+            height: 3.7rem;
+            position: absolute;
+            left: 43rem;
+            top: 14.5rem;
+        }
+        .CBC{
+            top: 9rem;
+            left: 38rem;
+        }
+        
+        .DSA-3{
+            top: 13.5rem;
+            left: 33rem;
+        }
+        
+        .DSB-3{
+            top: 13.5rem;
+            left: 43.5rem;
+        }
+        
+        
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="wrapper">
+
+
+        <div class="container">
+
+            <div class="head"> 132 KV GIS SLD </div>
+
+
+            <button class="btn" button>I/C - 1</button>
+
+            <!-- bay-1 -->
+            <p class="supply-1"> 132 KV</p>
+            <div class="termination-1"></div>
+           <div class="bay-1" id="line1">
+         
+           </div>
+
+           <!-- Circuit breaker  -->
+           <span class="CB CBA">CB-1</span>
+           <div class="bay-1 circuitBreaker" title="click to close the CB" id="CB-1"  ></div>
+
+           <div class="bay-1" id="line1-1"></div>
+
+           <div class="bay-1" id="line2"></div>
+
+           <div class="bay-1" id="line2-2"></div>
+
+           <span class="DS DSA-1">DSA</span>
+           <div id="iso1-1" title="click to close the isolator"></div>
+
+           <div class="bay-1" id="line2-3"></div>
+           
+           <span class="DS DSB-1">DSB</span>
+           <div id="iso1-2" title="click to close the isolator" class="isolator"></div>
+
+
+           <div id="line3-1"></div>
+           <div id="line3-2"></div>
+
+
+
+           <span class="BUS b1">BUS-1</span>
+            <div class="132-bay-1" id="bus1">
+            </div>
+
+            <span class="BUS b2">BUS-2</span>
+            <div class="132-bay-1" id="bus2">   
+            </div>
+
+            <!-- bay-2 -->
+
+            <div id="bay-2 " class="bay2-line31"></div>
+            <div id="bay-2 " class="bay2-line32"></div>
+
+            <span class="DS DSA-2">DSA</span>
+            <div class="bay2-iso1 isolator" title="click to close the isolator"></div>
+
+            <span class="DS DSB-2">DSB</span>
+            <div class="bay2-iso2 isolator" title="click to close the isolator"></div>
+            <div class="bay2-line21"></div>
+            <div class="bay2-line22"></div>
+            <div class="bay2-line2"></div>
+            <div class="bay2-line11"></div>
+
+            <span class="CB CBB ">CB-1</span>
+            <div class="CB-2 circuitBreaker" title="click to close the CB"></div>
+
+            <span class="DS AMT-1 ">AMT-1</span>
+            <div class="bay2-line1"></div>
+
+
+            
+            <!-- bay-3 -->
+
+            <div class="bay3-line31"></div>
+            <div class="bay3-line1"></div>
+
+            <span class="DS DSA-3">DSA</span>
+            <div class="bay3-iso1 " title="click to close the isolator"></div>
+
+            <div class="bay3-line11"></div>
+
+            <span class="CB CBC">CB-3</span>
+            <div class="CB-3 circuitBreaker" title="click to close the CB"></div>
+
+            <div class="bay3-line22"></div>
+
+            <span class="DS DSB-3">DSB</span>
+            <div class="bay3-iso2 " title="click to close the isolator"></div>
+
+            <div class="bay3-line2"></div>
+            <div class="bay3-line32"></div>
+
+
+
+            <!-- bay-4 -->
+
+            <div id="bay-4 " class="bay4-line31"></div>
+            <div id="bay-4 " class="bay4-line32"></div>
+
+            <span class="DS DSA-4">DSA</span>
+            <div class="bay4-iso1 isolator" title="click to close the isolator"></div>
+
+            <span class="DS DSB-4">DSB</span>
+            <div class="bay4-iso2 isolator" title="click to close the isolator"></div>
+
+            <div class="bay4-line21"></div>
+            <div class="bay4-line22"></div>
+            <div class="bay4-line2"></div>
+            <div class="bay4-line11"></div>
+
+            <span class="CB CBD">CB-4</span>
+            <div class="CB-4 circuitBreaker" title="click to close the CB"></div>
+
+
+            <span class="DS AMT-2 ">AMT-2</span>
+            <div class="bay4-line1"></div>
+
+
+            <!-- bay-5 -->
+
+            <p class="supply-2"> 132 KV</p>
+            <div class="termination-2"></div>
+            <div class="bay5-line1 b5line1" >
+            </div>
+
+            <span class="CB CBE">CB-5</span>
+           <div class="CB-5 circuitBreaker"title="click to close the CB" >
+           </div>
+           <div class="bay5-line11">
+           
+           </div>
+           <div class="bay5-line2">
+           
+           </div>
+           <div class="bay5-line21">
+            
+           </div>
+           <div class="bay5-line22">
+          
+           </div>
+
+           <span class="DS DSA-5">DSA</span>
+           <div class="bay5-iso1 isolator" title="click to close the isolator"></div>
+
+           <span class="DS DSB-5">DSB</span>
+           <div class="bay5-iso2 isolator" title="click to close the isolator"></div>
+
+           <div class="bay5-line31">
+          
+           </div>
+           <div class="bay5-line32">
+           
+           </div>
+
+           <button class="btn2">I/C - 2</button>
+
+           <button class="reload" onClick="window.location.reload()">Refresh Circuit</button>
+
+        </div>
+
+    </div>
+    
+
+    <script src="index.js">
+
+    </script>
+</body>
+</html>
