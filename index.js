@@ -3485,7 +3485,7 @@ bay4iso1.addEventListener("click", () =>{
         bay4line22.style.backgroundColor = "red"
         bay4line11.style.backgroundColor = "red"
 
-        if(CB2.style.backgroundColor === "green"){
+        if(CB4.style.backgroundColor === "green"){
             bay4line1.style.backgroundColor = "red"
         }
 
@@ -3501,7 +3501,7 @@ bay4iso1.addEventListener("click", () =>{
         bay4line22.style.backgroundColor = bay4line22Color
         bay4line11.style.backgroundColor = bay4line11Color
 
-        if(CB2.style.backgroundColor === "green"){
+        if(CB4.style.backgroundColor === "green"){
             bay4line1.style.backgroundColor = bay4line1Color
         }
     }
